@@ -85,7 +85,7 @@
 					<?php	
 				$under_list = $class->procat_under_list_default($val['id']);
 				foreach ($under_list as $value) : ?>
-							<li><a href="index.html"><?php echo $value['title']; ?></a></li>
+							<li><a href="index.php?c=pro&a=list&procat=<?php echo $value['id']; ?>"><?php echo $value['title']; ?></a></li>
 							<!-- <li><a href="home-02.html">Homepage V2</a></li>
 							<li><a href="home-03.html">Homepage V3</a></li> -->
 						<?php endforeach; ?>

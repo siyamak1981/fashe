@@ -7,9 +7,16 @@ class pro
         global $db;
         $this->db = $db;
     }
-    public function pro_list()
+    public function pro_list(){
+        $results=$this->db->query("SELECT * FROM pro_tbl");
+        $results=$results->fetchAll(PDO::FETCH_ASSOC);
+        return $results;
+    }
+
+    public function pro_list_catid($cat_id)
     {
-        $results = $this->db->query("SELECT * FROM pro_tbl");
+        $results = $this->db->query("SELECT * FROM pro_tbl WHERE cat_id='$cat_id'");
+       $results=$results->fetchAll(PDO::FETCH_ASSOC);
         return $results;
     }
     public function pro_add($data,$to)
