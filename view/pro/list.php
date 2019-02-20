@@ -20,13 +20,17 @@
 							Categories
 						</h4>
 
+				
 						<ul class="p-b-54">
+						<?php foreach($res as $procat):?>
 							<li class="p-t-4">
-								<a href="#" class="s-text13 active1">
-									All
+								<a href="index.php?c=pro&a=list&procat=<?php echo $procat['id'];?>" class="s-text13 active1">
+								<?php echo $procat['title'];?>
 								</a>
 							</li>
+<?php endforeach;?>
 
+<!-- 						
 							<li class="p-t-4">
 								<a href="#" class="s-text13">
 									Women
@@ -49,8 +53,8 @@
 								<a href="#" class="s-text13">
 									Accesories
 								</a>
-							</li>
-						</ul>
+							</li>-->
+						</ul> 
 
 						<!--  -->
 						<h4 class="m-text14 p-b-32">
