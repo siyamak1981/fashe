@@ -3,32 +3,32 @@
 <head>
 	<title>Contact</title>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="./public/defaultport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="view/images/icons/favicon.png"/>
+	<link rel="icon" type="image/png" href="./public/default/images/icons/favicon.png"/>
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="view/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./public/default/vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="view/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./public/default/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="view/fonts/themify/themify-icons.css">
+	<link rel="stylesheet" type="text/css" href="./public/default/fonts/themify/themify-icons.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="view/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+	<link rel="stylesheet" type="text/css" href="./public/default/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="view/fonts/elegant-font/html-css/style.css">
+	<link rel="stylesheet" type="text/css" href="./public/default/fonts/elegant-font/html-css/style.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="view/vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="./public/default/vendor/animate/animate.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="view/vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="./public/default/vendor/css-hamburgers/hamburgers.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="view/vendor/animsition/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="./public/default/vendor/animsition/css/animsition.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="view/vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="./public/default/vendor/select2/select2.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="view/vendor/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="./public/default/vendor/slick/slick.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="view/css/util.css">
-	<link rel="stylesheet" type="text/css" href="view/css/main.css">
+	<link rel="stylesheet" type="text/css" href="./public/default/css/util.css">
+	<link rel="stylesheet" type="text/css" href="./public/default/css/main.css">
 <!--===============================================================================================-->
 </head>
 <body class="animsition">
@@ -67,7 +67,7 @@
 			<div class="wrap_header">
 				<!-- Logo -->
 				<a href="index.html" class="logo">
-					<img src="view/images/icons/logo.png" alt="IMG-LOGO">
+					<img src="./public/default/images/icons/logo.png" alt="IMG-LOGO">
 				</a>
 
 				<!-- Menu -->
@@ -113,13 +113,13 @@
 				<!-- Header Icon -->
 				<div class="header-icons">
 					<a href="#" class="header-wrapicon1 dis-block">
-						<img src="view/images/icons/icon-header-01.png" class="header-icon1" alt="ICON">
+						<img src="./public/default/images/icons/icon-header-01.png" class="header-icon1" alt="ICON">
 					</a>
 
 					<span class="linedivide1"></span>
 
 					<div class="header-wrapicon2">
-						<img src="view/images/icons/icon-header-02.png" class="header-icon1 js-show-header-dropdown" alt="ICON">
+						<img src="./public/default/images/icons/icon-header-02.png" class="header-icon1 js-show-header-dropdown" alt="ICON">
 						<span class="header-icons-noti">0</span>
 
 						<!-- Header cart noti -->
@@ -127,7 +127,7 @@
 							<ul class="header-cart-wrapitem">
 								<li class="header-cart-item">
 									<div class="header-cart-item-img">
-										<img src="view/images/item-cart-01.jpg" alt="IMG">
+										<img src="./public/default/images/item-cart-01.jpg" alt="IMG">
 									</div>
 
 									<div class="header-cart-item-txt">
@@ -143,7 +143,7 @@
 
 								<li class="header-cart-item">
 									<div class="header-cart-item-img">
-										<img src="view/images/item-cart-02.jpg" alt="IMG">
+										<img src="./public/default/images/item-cart-02.jpg" alt="IMG">
 									</div>
 
 									<div class="header-cart-item-txt">
@@ -159,7 +159,7 @@
 
 								<li class="header-cart-item">
 									<div class="header-cart-item-img">
-										<img src="view/view/images/item-cart-03.jpg" alt="IMG">
+										<img src="./public/default/./public/default/images/item-cart-03.jpg" alt="IMG">
 									</div>
 
 									<div class="header-cart-item-txt">
@@ -182,7 +182,7 @@
 								<div class="header-cart-wrapbtn">
 									<!-- Button -->
 									<a href="cart.html" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
-										View Cart
+										./public/default Cart
 									</a>
 								</div>
 
@@ -203,7 +203,7 @@
 		<div class="wrap_header_mobile">
 			<!-- Logo moblie -->
 			<a href="index.html" class="logo-mobile">
-				<img src="view/images/icons/logo.png" alt="IMG-LOGO">
+				<img src="./public/default/images/icons/logo.png" alt="IMG-LOGO">
 			</a>
 
 			<!-- Button show menu -->
@@ -211,13 +211,13 @@
 				<!-- Header Icon mobile -->
 				<div class="header-icons-mobile">
 					<a href="#" class="header-wrapicon1 dis-block">
-						<img src="view/images/icons/icon-header-01.png" class="header-icon1" alt="ICON">
+						<img src="./public/default/images/icons/icon-header-01.png" class="header-icon1" alt="ICON">
 					</a>
 
 					<span class="linedivide2"></span>
 
 					<div class="header-wrapicon2">
-						<img src="view/images/icons/icon-header-02.png" class="header-icon1 js-show-header-dropdown" alt="ICON">
+						<img src="./public/default/images/icons/icon-header-02.png" class="header-icon1 js-show-header-dropdown" alt="ICON">
 						<span class="header-icons-noti">0</span>
 
 						<!-- Header cart noti -->
@@ -225,7 +225,7 @@
 							<ul class="header-cart-wrapitem">
 								<li class="header-cart-item">
 									<div class="header-cart-item-img">
-										<img src="view/images/item-cart-01.jpg" alt="IMG">
+										<img src="./public/default/images/item-cart-01.jpg" alt="IMG">
 									</div>
 
 									<div class="header-cart-item-txt">
@@ -241,7 +241,7 @@
 
 								<li class="header-cart-item">
 									<div class="header-cart-item-img">
-										<img src="view/images/item-cart-02.jpg" alt="IMG">
+										<img src="./public/default/images/item-cart-02.jpg" alt="IMG">
 									</div>
 
 									<div class="header-cart-item-txt">
@@ -257,7 +257,7 @@
 
 								<li class="header-cart-item">
 									<div class="header-cart-item-img">
-										<img src="view/images/item-cart-03.jpg" alt="IMG">
+										<img src="./public/default/images/item-cart-03.jpg" alt="IMG">
 									</div>
 
 									<div class="header-cart-item-txt">
@@ -280,7 +280,7 @@
 								<div class="header-cart-wrapbtn">
 									<!-- Button -->
 									<a href="cart.html" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
-										View Cart
+										./public/default Cart
 									</a>
 								</div>
 
@@ -566,23 +566,23 @@
 
 		<div class="t-center p-l-15 p-r-15">
 			<a href="#">
-				<img class="h-size2" src="view/images/icons/paypal.png" alt="IMG-PAYPAL">
+				<img class="h-size2" src="./public/default/images/icons/paypal.png" alt="IMG-PAYPAL">
 			</a>
 
 			<a href="#">
-				<img class="h-size2" src="view/images/icons/visa.png" alt="IMG-VISA">
+				<img class="h-size2" src="./public/default/images/icons/visa.png" alt="IMG-VISA">
 			</a>
 
 			<a href="#">
-				<img class="h-size2" src="view/images/icons/mastercard.png" alt="IMG-MASTERCARD">
+				<img class="h-size2" src="./public/default/images/icons/mastercard.png" alt="IMG-MASTERCARD">
 			</a>
 
 			<a href="#">
-				<img class="h-size2" src="view/images/icons/express.png" alt="IMG-EXPRESS">
+				<img class="h-size2" src="./public/default/images/icons/express.png" alt="IMG-EXPRESS">
 			</a>
 
 			<a href="#">
-				<img class="h-size2" src="view/images/icons/discover.png" alt="IMG-DISCOVER">
+				<img class="h-size2" src="./public/default/images/icons/discover.png" alt="IMG-DISCOVER">
 			</a>
 
 			<div class="t-center s-text8 p-t-20">
@@ -607,14 +607,14 @@
 
 
 <!--===============================================================================================-->
-	<script type="text/javascript" src="view/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="./public/default/vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
-	<script type="text/javascript" src="view/vendor/animsition/js/animsition.min.js"></script>
+	<script type="text/javascript" src="./public/default/vendor/animsition/js/animsition.min.js"></script>
 <!--===============================================================================================-->
-	<script type="text/javascript" src="view/vendor/bootstrap/js/popper.js"></script>
-	<script type="text/javascript" src="view/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./public/default/vendor/bootstrap/js/popper.js"></script>
+	<script type="text/javascript" src="./public/default/vendor/bootstrap/js/bootstrap.min.js"></script>
 <!--===============================================================================================-->
-	<script type="text/javascript" src="view/vendor/select2/select2.min.js"></script>
+	<script type="text/javascript" src="./public/default/vendor/select2/select2.min.js"></script>
 	<script type="text/javascript">
 		$(".selection-1").select2({
 			minimumResultsForSearch: 20,
@@ -628,9 +628,9 @@
 	</script>
 <!--===============================================================================================-->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script>
-	<script src="view/js/map-custom.js"></script>
+	<script src="./public/default/js/map-custom.js"></script>
 <!--===============================================================================================-->
-	<script src="view/js/main.js"></script>
+	<script src="./public/default/js/main.js"></script>
 
 </body>
 </html>

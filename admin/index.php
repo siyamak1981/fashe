@@ -2,9 +2,9 @@
 <?php
 
 include_once 'view/layout/dashboard.php';
-// if (!isset($_SESSION['login'])){
-//     header ("#");
-// }
+if (!isset($_SESSION['login'])){
+    header ("location:../view/user/login.php");
+}
 include_once '../public/include/config.php';
 
 $contoroller = @$_GET['c'] ? $_GET['c'] : 'index';
