@@ -3,7 +3,13 @@
 
 include_once 'view/layout/dashboard.php';
 if (!isset($_SESSION['login'])){
-    header ("location:../view/user/login.php");
+    // header ("location:./index.php?c=user&a=login&login=error");
+    // if (headers_sent()) {
+    //                  die('<script>window.location="index.php?c=index&a=index";</script>');
+    //              } else {
+    //                  header("location:./index.php?c=user&a=login&login=error");
+    //                 //  exit();
+    //              }
 }
 include_once '../public/include/config.php';
 

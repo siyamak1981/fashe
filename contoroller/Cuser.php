@@ -1,5 +1,5 @@
 <?php
-session_start();
+ session_start();
 require_once 'model/Muser.php';
 $class = new user();
 switch ($action) {
@@ -18,7 +18,7 @@ switch ($action) {
 
 
                 if (headers_sent()) {
-                    die('<script>window.location="./admin/index.php?c=layout&a=dashboard";</script>');
+                    die('<script>window.location="./admin/index.php?c=index&a=index";</script>');
                 } else {
                     header("location:index.php?c=user&a=login&login=error");
                     exit();
@@ -34,5 +34,6 @@ switch ($action) {
 
 
 require_once 'view/' . $contoroller . "/" . $action . '.php';
-// همون صفحه لاگین در ویو هستش
- 
+// // همون صفحه لاگین در ویو هستش
+?>
+<?php
