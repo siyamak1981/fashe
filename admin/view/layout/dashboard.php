@@ -53,14 +53,14 @@
           <div class="p-2 border bg-warning pl-5"></div>
 
           <div class="list-group">
-            <a href="dashboard.php?m=index&p=index" class="list-group-item "><i class="fa fa-dashboard"></i>صفحه اصلی</a>
+            <a href="index.php?c=index&a=index" class="list-group-item "><i class="fa fa-dashboard"></i>صفحه اصلی</a>
             <!-- submenue -->
             <a data-toggle="collapse" class="list-group-item" href="#collapse1">
            <i class="fa fa-cogs"></i>مدیریت منوها<i class="fa fa-caret-down " style="float:left;"></i></a>
          <div id="collapse1" class="panel-collapse collapse">
            <ul class="list-group">
-             <a class = "bibiten" href ="dashboard.php?m=menu&p=list"><li class="list-group-item">لیست منو ها</li></a>
-             <a class = "bibiten" href ="dashboard.php?m=menu&p=add"><li class="list-group-item">افزودن منو های جدید</li></a>
+             <a class = "bibiten" href ="index.php?c=menu&a=list"><li class="list-group-item">لیست منو ها</li></a>
+             <a class = "bibiten" href ="index.php?c=menu&a=add"><li class="list-group-item">افزودن منو های جدید</li></a>
            </ul>
          </div>
         <!-- submenue -->

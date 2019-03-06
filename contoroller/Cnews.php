@@ -1,6 +1,6 @@
 <?php
 
-require_once 'model/Mnews.php';
+require_once 'admin/model/Mnews.php';
 $class = new news();
 switch ($action) {
     case 'add';

@@ -1,6 +1,6 @@
 <?php
  session_start();
-require_once 'model/Muser.php';
+require_once 'admin/model/Muser.php';
 $class = new user();
 switch ($action) {
     case 'login':
@@ -18,9 +18,9 @@ switch ($action) {
 
 
                 if (headers_sent()) {
-                    die('<script>window.location="./admin/index.php?c=index&a=index";</script>');
+                    die('<script>window.location="admin/index.php?c=index&a=index";</script>');
                 } else {
-                    header("location:index.php?c=user&a=login&login=error");
+                    header("location:admin/index.php?c=index&a=index");
                     exit();
                 }
             }

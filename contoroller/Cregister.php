@@ -1,6 +1,6 @@
 <?php
 
-    require_once 'model/Mregister.php';
+    require_once 'admin/model/Mregister.php';
     $class = new register();
     if(isset($_POST['btn'])){
         $data=$_POST['frm'];
