@@ -14,19 +14,24 @@
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($row as $val) : ?>
+                <?php foreach ($results as $val) : ?>
                 </td>
                 <td>
                     <?php echo $val['title']; ?>
                 </td>
                 <td>
-                    <?php if ($val['chid'] == 0) {
-                      echo "ندارد";
-                    } else {
-                      $parent = SelectParentMenu($val['child']);
-                      echo $parent;
-                    }
-                    ?>
+                    <?php 
+                foreach ($results as $val2) :
+                        if ($val2['chid'] == 0) {
+                            echo "ندارد";
+                        } else {
+                            $parent = SelectParentMenu($val2['chid']);
+                            var_dump($parent);die;
+                            echo $parent;
+                            // echo 'دارد';
+                        }
+                        ?>
+           <?php endforeach;?>
                 </td>
                 <td>
                     <?php echo $val['url']; ?>
@@ -34,14 +39,13 @@
                 <td>
                     <?php echo $val['sort']; ?>
                 </td>
-
                 <!-- <td>elit</td> -->
                 <td>
                     <?php
                     if ($val['status'] == 0) {
-                      echo "<i class='fa fa-bed'></i>";
+                        echo "<i class='fa fa-bed'></i>";
                     } else {
-                      echo "<i class='fa fa-bomb'></i>";
+                        echo "<i class='fa fa-bomb'></i>";
                     }
                     ?>
                 </td>

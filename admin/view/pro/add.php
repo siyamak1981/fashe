@@ -27,7 +27,7 @@
                         <select class="form-control" name="frm[cat_id]">
 
                        <?php  foreach ($res as $val): ?>
-                            <option value='<?php echo $val['id'] ;?>'><?php echo $val['title'] ;?></option>";
+                            <option value='<?php echo $val['id'] ;?>'><?php echo $val['title'] ;?></option>;
                             
 
                             <?php endforeach ;?>

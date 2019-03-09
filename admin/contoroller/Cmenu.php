@@ -19,8 +19,10 @@ switch ($action) {
         break;
 
         case 'list':
-        $row=$class->list_menu();
+        $results=$class->list_menu();
+        // $result=@$class->SelectParentMenu($chid);
         break;
+     
         case 'delete':
         $id=$_GET['id'];
         $class->delete_menu($id);
@@ -31,11 +33,11 @@ switch ($action) {
             exit();
         }
         break;
+
         case 'edit':
         $id=$_GET['id'];
-        $result=$class->show_edit_menu($id);
+        $res=$class->show_edit_menu($id);
         $sub = $class->submenu();
-        
         if($_POST){
             $data=$_POST['frm'];
             $class->edit_menu($id,$data);

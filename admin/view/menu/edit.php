@@ -7,12 +7,12 @@
 
             <div class="card-body">
                 <form method="post">
-                    <span>عنوان منو<?php echo $result['title']; ?></span>
+                    <span>عنوان منو<?php echo $res['title']; ?></span>
                     <div class="input-group-lg input-group mb-3 mt-2">
                         <div class="input-group-prepend ">
                             <span class="input-group-text "><i class="fa fa-bars"></i></span>
                         </div>
-                        <input type="text" class="form-control input-lg" name="frm[title]" placeholder="عنوان منو را وارد کنید" value="<?php echo $result['title']; ?>">
+                        <input type="text" class="form-control input-lg" name="frm[title]" placeholder="عنوان منو را وارد کنید" value="<?php echo $res['title']; ?>">
 
                     </div>
                     <span>آدرس منو</span>
@@ -20,7 +20,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fa fa-location-arrow"></i></span>
                         </div>
-                        <input type="text" class="form-control" name="frm[url]" placeholder="لینک منو را وارد کنید" value="<?php echo $result['url']; ?>">
+                        <input type="text" class="form-control" name="frm[url]" placeholder="لینک منو را وارد کنید" value="<?php echo $res['url']; ?>">
                     </div>
 
                     <span> سرگروه</span>
@@ -33,9 +33,9 @@
 
                             <?php
                             foreach ($sub as $subs) : ?>
-                            <option value='<?php echo $subs[' id']; ?>'>
+                            <option value='<?php echo $subs['id']; ?>'>
                                 <?php echo $subs['title']; ?>
-                            </option>";
+                            </option>;
                             <?php endforeach; ?>
                         </select>
 
@@ -46,16 +46,16 @@
                         <div class="input-group-prepend ">
                             <span class="input-group-text "><i class="fa fa-eye-slash"></i></span>
                         </div>
-                        <input type="text" class="form-control input-lg" name="frm[sort]" placeholder="ترتیب نمایش" value="<?php echo $result['sort']; ?>">
+                        <input type="text" class="form-control input-lg" name="frm[sort]" placeholder="ترتیب نمایش" value="<?php echo $res['sort']; ?>">
                     </div>
                     <span>وضعیت نمایش</span>
                     <div class="radio">
-                        <label><input type="radio" name="frm[status]" value="1" <?php if ($result['status'] == 1) {
+                        <label><input type="radio" name="frm[status]" value="1" <?php if ($res['status'] == 1) {
                                                                                     echo 'checked';
                                                                                 } ?>> فعال </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" value="0" name="frm[status]" value="0" <?php if ($result["status"] == 0) {
+                        <label><input type="radio" value="0" name="frm[status]" value="0" <?php if ($res["status"] == 0) {
                                                                                                 echo 'checked';
                                                                                             } ?>> غیرفعال </label>
                     </div>
