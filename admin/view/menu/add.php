@@ -30,9 +30,7 @@
                         </div>
                         <select class="form-control" name="frm[parent]">
                             <option value="0">سر گروه</option>
-                            <?php
-                            
-                            foreach ($sub as $subs) : ?>
+                            <?php foreach ($sub as $subs) : ?>
                             <option value='<?php echo $subs['id']; ?>'>
                                 <?php echo $subs['title']; ?>
                             </option>;

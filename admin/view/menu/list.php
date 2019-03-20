@@ -1,3 +1,4 @@
+
 <div class="col-sm-10">
     <div class="table-responsive-sm">
         <table class="table table-dark table-hover text-warning " style="background:#111;">
@@ -21,18 +22,16 @@
                 </td>
                 <td>
                     <?php 
-                foreach ($results as $val2) :
-                        if ($val2['chid'] == 0) {
-                            echo "ندارد";
-                        } else {
-                            $parent = SelectParentMenu($val2['chid']);
-                            var_dump($parent);die;
-                            echo $parent;
-                            // echo 'دارد';
-                        }
-                        ?>
-           <?php endforeach;?>
+          
+               if ($val['chid']==0)  {
+               echo "ندارد";
+             } else {
+                       $parent=$class->selectParentMenu($val['chid']); 
+                     echo $parent['title'];
+                     }
+               ?>
                 </td>
+         
                 <td>
                     <?php echo $val['url']; ?>
                 </td>
@@ -52,7 +51,9 @@
                 <td><a href="index.php?c=menu&a=edit&id=<?php echo $val['id']; ?>"><i class='fa fa-edit'></i></a></td>
                 <td><a href="index.php?c=menu&a=delete&id=<?php echo $val['id']; ?>"><i class='fa fa-trash'></i></a></td>
                 </tr>
-                <?php endforeach; ?>
+                <?php 
+                endforeach; 
+                ?>
             </tbody>
         </table>
     </div>

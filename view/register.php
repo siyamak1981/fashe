@@ -398,6 +398,7 @@
 
 				<div class="col-md-6 p-b-30">
 				<form action="index.php?c=register" method="post">
+				
 						<h4 class="m-text26 p-b-36 p-t-15">
 							ثبت نام کنید
 						</h4>

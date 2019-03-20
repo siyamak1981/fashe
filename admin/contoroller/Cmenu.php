@@ -14,13 +14,10 @@ switch ($action) {
         }
         break;
     }
-    case 'submenu':
+    
+    case 'list':
     $sub = $class->submenu();
-        break;
-
-        case 'list':
         $results=$class->list_menu();
-        // $result=@$class->SelectParentMenu($chid);
         break;
      
         case 'delete':

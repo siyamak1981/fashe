@@ -13,10 +13,9 @@ switch ($action) {
             $class->procat_add($data);
             if (headers_sent()) {
                 die('<script>window.location="index.php?c=procat&a=list";</script>');
-            }
-            else{
-               header("Location:index.php?c=procat&a=list");
-               exit();
+            } else {
+                header("Location:index.php?c=procat&a=list");
+                exit();
             }
         }
         break;
@@ -25,29 +24,27 @@ switch ($action) {
         $class->procat_delete($id);
         if (headers_sent()) {
             die('<script>window.location="index.php?c=procat&a=list";</script>');
-        }
-        else{
-           header("Location:index.php?c=procat&a=list");
-           exit();
+        } else {
+            header("Location:index.php?c=procat&a=list");
+            exit();
         }
         break;
-        case 'edit':
+    case 'edit':
         $id = $_GET['id'];
-        $results=$class->procat_showEdit($id);
+        $results = $class->procat_showEdit($id);
         $res = $class->promaincat_list();
         if ($_POST) {
             $data = $_POST['frm'];
-            $class->procat_edit($data,$id);
+            $class->procat_edit($data, $id);
             if (headers_sent()) {
                 die('<script>window.location="index.php?c=procat&a=list";</script>');
-            }
-            else{
-               header("Location:index.php?c=procat&a=list");
-               exit();
+            } else {
+                header("Location:index.php?c=procat&a=list");
+                exit();
             }
             break;
         }
 }
 
 require_once 'view/' . $contoroller . "/" . $action . '.php';
-?>
+ 

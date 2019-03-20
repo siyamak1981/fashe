@@ -11,7 +11,7 @@ class menu
   }
 
   public function submenu(){
-    $sql=$this->db->query("SELECT * FROM `menu-tbl` WHERE chid = '0'");
+    $sql=$this->db->query("SELECT * FROM `menu-tbl` WHERE `chid`='0'");
     $sub=$sql->fetchAll(PDO::FETCH_ASSOC);
     return $sub;
   }
@@ -20,14 +20,15 @@ class menu
     $results=$sql->fetchAll(PDO::FETCH_ASSOC);
     return $results;
   }
+  public function selectParentMenu($chid){
+  
+    // var_dump($chid);die;
+    $sql=$this->db->query("SELECT * FROM `menu-tbl` WHERE `id`=$chid");
+    $result=$sql->fetch(PDO::FETCH_ASSOC);
+    return $result;
+  }
   public function delete_menu($id){
     $this->db->query(" DELETE FROM `menu-tbl` WHERE `menu-tbl`.`id` = '$id' ");
-  }
-  public function SelectParentMenu($chid){
-    $sql=$this->db->query("SELECT * FROM `menu-tbl` WHERE `chid`='$chid'");
-    $result=$sql->fetchAll(PDO::FETCH_ASSOC);
-    // var_dump($result);die;
-    return $result;
   }
   public function show_edit_menu($id){
     $result=$this->db->query("SELECT * FROM `menu-tbl` WHERE id='$id'");

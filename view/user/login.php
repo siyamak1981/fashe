@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -397,6 +398,7 @@
 				</div>
 
 				<div class="col-md-6 p-b-30">
+
                 <form action="index.php?c=user&a=login" method="post">
 						<h4 class="m-text26 p-b-36 p-t-15">
 							ورود
@@ -405,6 +407,11 @@
 						<div class="bo4 of-hidden size15 m-b-20">
 							<input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="frm[username]" placeholder="Full Name">
                         </div>
+
+						<?php
+
+			
+						?>
                      
 
 						<div class="bo4 of-hidden size15 m-b-20">
