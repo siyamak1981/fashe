@@ -7,7 +7,7 @@ class main {
     }
 
     public function menu_list(){
-        $results=$this->db->query("SELECT * FROM `menu_tbl` ");
+        $results=$this->db->query("SELECT * FROM `menu-tbl` ");
         return  $results;
     }
 

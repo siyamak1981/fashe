@@ -1,5 +1,4 @@
 
-<?php include 'dashboard.php';?>
 <div class="col-sm-10">
   <div class="table-responsive-sm">
     <table class="table table-dark table-hover text-warning " style="background:#111;">
@@ -17,8 +16,8 @@
       <tbody>
 
        <?php 
-    //   $listnews = listnewsadmin();
-      foreach ($row as $val) :
+   
+      foreach ($select_news as $val) :
 
       ?>
         <tr>
@@ -30,7 +29,7 @@
               ?>
           </td>
        
-          <td><img width="60" src = "<?php echo $val['img']; ?>" /></td>
+          <td><img width="60" src = "<?php echo $val['image']; ?>" /></td>
           <!-- <td>elit</td> -->
           <td><a href="index.php?c=news&a=edit&id=<?php echo $val['id']; ?>"><i class='fa fa-edit'></i></a></td>
           <td><a href="index.php?c=news&a=delete&id=<?php echo $val['id']; ?>"><i class='fa fa-trash'></i></a></td>

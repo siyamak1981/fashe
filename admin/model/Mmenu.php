@@ -21,8 +21,6 @@ class menu
     return $results;
   }
   public function selectParentMenu($chid){
-  
-    // var_dump($chid);die;
     $sql=$this->db->query("SELECT * FROM `menu-tbl` WHERE `id`=$chid");
     $result=$sql->fetch(PDO::FETCH_ASSOC);
     return $result;
@@ -38,6 +36,17 @@ class menu
   public function edit_menu($id,$data){
     $this->db->query(" UPDATE `menu-tbl` SET `title`='$data[title]',`url`='$data[url]',`chid`='$data[parent]', `status`='$data[status]' ,`sort`='$data[sort]' WHERE `menu-tbl`.`id` = $id  ");
   }
+  // menu_default
+  public function menu_list_default(){
+    $rows=$this->db->query("SELECT * FROM `menu-tbl` WHERE `status`='1'  AND `chid`='0' ORDER BY sort ASC ");
+    $row=$rows->fetchAll(PDO::FETCH_ASSOC);
+    // var_dump($row);die;
+    return $row;
+  }
+  public function sub_menu_list_default($id){
+    $sub=$this->db->query("SELECT * FROM `menu-tbl` WHERE `status`='1'  AND chid='$id' ORDER BY sort ASC");
+    $subs=$sub->fetchAll(PDO::FETCH_ASSOC);
+    return $subs;
+  }
 }
 ?>
-

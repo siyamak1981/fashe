@@ -25,13 +25,10 @@
                             <span class="input-group-text "><i class="fa fa-group"></i></span>
                         </div>
                         <select class="form-control" name="frm[chid]">
-                            <!-- <option value="0">دسته بندی </option> -->
                             
                             <option value='0'>سرگروه</option>";
                        <?php  foreach ($res as $val): ?>
                             <option value='<?php echo $val['id'] ;?>'><?php echo $val['title'] ;?></option>";
-                            
-
                             <?php endforeach ;?>
                         </select>
 
@@ -60,5 +57,7 @@
 </div>
 </section>
                    
+                            
+
 
 

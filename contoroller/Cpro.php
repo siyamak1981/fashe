@@ -11,7 +11,6 @@ switch ($action) {
     if(isset($_GET['procat'])){
         $cat_id = $_GET['procat'];
         $result = $pro->pro_list_catid($cat_id);
-
     }
     else {
         $result = $pro->pro_list();

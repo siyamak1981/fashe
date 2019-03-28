@@ -1,5 +1,4 @@
 <?php
-
 require_once 'model/Mpro.php';
 $class = new pro();
 switch ($action) {
@@ -18,8 +17,6 @@ switch ($action) {
             move_uploaded_file($from, $to);
 
             $class->pro_add($data, $to);
-
-
             if (headers_sent()) {
                 die('<script>window.location="index.php?c=pro&a=list";</script>');
             } else {
@@ -42,10 +39,10 @@ switch ($action) {
         $id=$_GET['id'];
         $results=$class->pro_showEdit($id);
         $res=$class->procat_list();
-
         if ($_POST) {
             $data = $_POST['frm'];
             $class->pro_edit($data, $id);
+            // var_dump($data);die;
             if (headers_sent()) {
                 die('<script>window.location="index.php?c=pro&a=list";</script>');
             } else {

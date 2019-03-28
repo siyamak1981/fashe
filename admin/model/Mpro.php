@@ -15,7 +15,7 @@ class pro
 
     public function pro_list_catid($cat_id)
     {
-        $results = $this->db->query("SELECT * FROM pro_tbl WHERE cat_id='$cat_id'");
+       $results = $this->db->query("SELECT * FROM pro_tbl WHERE cat_id='$cat_id'");
        $results=$results->fetchAll(PDO::FETCH_ASSOC);
         return $results;
     }
@@ -42,8 +42,8 @@ class pro
     }
     public function pro_edit($data,$id)
     {
-      
-  $this->db->query("UPDATE `pro_tbl` SET `title` = '$data[title]' , `chid` = '$data[chid]' WHERE `pro_tbl`.`id` = $id ");
+        $this->db->query("UPDATE `pro_tbl` SET `title` = '$data[title]' , `text` = '$data[text]', `price`= '$data[price]' WHERE `pro_tbl`.`id` = $id ");
+        
       
     }
 

@@ -8,7 +8,7 @@
   <title>Page Title</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
-  <meta name="keyword" content="FlatLab, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+  <meta name="keyword" content="FlatLab, index, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
   <link rel="stylesheet" type="text/css" media="screen" href="../public/admin/css/dashbord.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="../public/admin/css/addmenu.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="../public/admin/css/hover-box.css" />
@@ -53,7 +53,7 @@
           <div class="p-2 border bg-warning pl-5"></div>
 
           <div class="list-group">
-            <a href="index.php?c=index&a=index" class="list-group-item "><i class="fa fa-dashboard"></i>صفحه اصلی</a>
+            <a href="index.php?c=index&a=index" class="list-group-item "><i class="fa fa-index"></i>صفحه اصلی</a>
             <!-- submenue -->
             <a data-toggle="collapse" class="list-group-item" href="#collapse1">
            <i class="fa fa-cogs"></i>مدیریت منوها<i class="fa fa-caret-down " style="float:left;"></i></a>
@@ -72,39 +72,39 @@
             <a class = "bibiten" href ="index.php?c=pro&a=add"><li class="list-group-item">افزودن محصول</li></a>
           </ul>
         </div>
-                 <!-- submenue -->
-          <a data-toggle="collapse" class="list-group-item" href="#collapse3">
-            <i class="fa fa-cogs"></i>مدیریت محصولات<i class="fa fa-caret-down " style="float:left;"></i></a>
-          <div id="collapse3" class="panel-collapse collapse">
-            <ul class="list-group">
-              <a class = "bibiten" href ="dashboard.php?m=product&p=list"><li class="list-group-item">لیست محصولات </li></a>
-              <a class = "bibiten" href ="dashboard.php?m=product&p=add"><li class="list-group-item">افزودن محصولات جدید</li></a>
-            </ul>
-          </div>
+        <!-- submenue -->
+          <a data-toggle="collapse" class="list-group-item" href="#collapse5">
+           <i class="fa fa-list"></i> دسته بندی محصولات<i class="fa fa-caret-down " style="float:left;"></i></a>
+         <div id="collapse5" class="panel-collapse collapse">
+           <ul class="list-group">
+             <a class = "bibiten" href ="index.php?c=procat&a=list"><li class="list-group-item">لیست  دسته بندی</li></a>
+             <a class = "bibiten" href ="index.php?c=procat&a=add"><li class="list-group-item">افزودن دسته بندی</li></a>
+           </ul>
+         </div>
                   <!-- submenue -->
           <a data-toggle="collapse" class="list-group-item" href="#collapse4">
            <i class="fa fa-list"></i>دسته بندی خبرها<i class="fa fa-caret-down " style="float:left;"></i></a>
          <div id="collapse4" class="panel-collapse collapse">
            <ul class="list-group">
-             <a class = "bibiten" href ="dashboard.php?m=news_cat&p=list"><li class="list-group-item">لیست خبر ها</li></a>
-             <a class = "bibiten" href ="dashboard.php?m=news_cat&p=add"><li class="list-group-item">افزودن خبر های جدید</li></a>
+             <a class = "bibiten" href ="index.php?c=newcat&a=list"><li class="list-group-item">لیست خبر ها</li></a>
+             <a class = "bibiten" href ="index.php?c=newcat&a=add"><li class="list-group-item">افزودن خبر های جدید</li></a>
            </ul>
          </div>
-        <!-- submenue -->
-          <a data-toggle="collapse" class="list-group-item" href="#collapse5">
-           <i class="fa fa-list"></i>مدیریت خبرها<i class="fa fa-caret-down " style="float:left;"></i></a>
-         <div id="collapse5" class="panel-collapse collapse">
-           <ul class="list-group">
-             <a class = "bibiten" href ="index.php?c=procat&a=list"><li class="list-group-item">لیست  اخبار</li></a>
-             <a class = "bibiten" href ="index.php?c=procat&a=add"><li class="list-group-item">افزودن خبر های جدید</li></a>
-           </ul>
-         </div>
+                 <!-- submenue -->
+          <a data-toggle="collapse" class="list-group-item" href="#collapse3">
+            <i class="fa fa-cogs"></i> خبر ها<i class="fa fa-caret-down " style="float:left;"></i></a>
+          <div id="collapse3" class="panel-collapse collapse">
+            <ul class="list-group">
+              <a class = "bibiten" href ="index.php?c=news&a=list"><li class="list-group-item">لیست اخبار </li></a>
+              <a class = "bibiten" href ="index.php?c=news&a=add"><li class="list-group-item">افزودن خبر جدید</li></a>
+            </ul>
+          </div>
         <!-- submenue -->
           <a data-toggle="collapse" class="list-group-item" href="#collapse6">
            <i class="fa fa-list"></i> تماسها<i class="fa fa-caret-down " style="float:left;"></i></a>
          <div id="collapse6" class="panel-collapse collapse">
            <ul class="list-group">
-             <a class = "bibiten" href ="dashboard.php?m=contact&p=list"><li class="list-group-item">لیست  تماسها</li></a>
+             <a class = "bibiten" href ="index.php?c=contact&a=list"><li class="list-group-item">لیست  تماسها</li></a>
            
            </ul>
          </div>
@@ -113,8 +113,8 @@
            <i class="fa fa-list"></i>مدیریت ویجت<i class="fa fa-caret-down " style="float:left;"></i></a>
          <div id="collapse7" class="panel-collapse collapse">
            <ul class="list-group">
-             <a class = "bibiten" href ="dashboard.php?m=widget&p=list"><li class="list-group-item">لیست  ویجت</li></a>
-             <a class = "bibiten" href ="dashboard.php?m=widget&p=add"><li class="list-group-item">افزودن ویجت جدید</li></a>
+             <a class = "bibiten" href ="index.php?c=widget&a=list"><li class="list-group-item">لیست  ویجت</li></a>
+             <a class = "bibiten" href ="index.php?c=widget&a=add"><li class="list-group-item">افزودن ویجت جدید</li></a>
            </ul>
          </div>
          <!-- submenue -->
@@ -122,7 +122,7 @@
            <i class="fa fa-cogs"></i>تنظیمات وب<i class="fa fa-caret-down " style="float:left;"></i></a>
          <div id="collapse8" class="panel-collapse collapse">
            <ul class="list-group">
-             <a class = "bibiten" href ="dashboard.php?m=settings&p=edit"><li class="list-group-item">ویرایش تنطیمات</li></a>
+             <a class = "bibiten" href ="index.php?c=settings&a=edit"><li class="list-group-item">ویرایش تنطیمات</li></a>
             </ul>
           </div>
           
@@ -131,8 +131,8 @@
            <i class="fa fa-list"></i>مدیریت صفحه<i class="fa fa-caret-down " style="float:left;"></i></a>
          <div id="collapse9" class="panel-collapse collapse">
            <ul class="list-group">
-             <a class = "bibiten" href ="dashboard.php?m=page&p=list"><li class="list-group-item">لیست صفحه</li></a>
-             <a class = "bibiten" href ="dashboard.php?m=page&p=add"><li class="list-group-item">افزودن صفحه جدید</li></a>
+             <a class = "bibiten" href ="index.php?c=page&a=list"><li class="list-group-item">لیست صفحه</li></a>
+             <a class = "bibiten" href ="index.php?c=page&a=add"><li class="list-group-item">افزودن صفحه جدید</li></a>
            </ul>
          </div>
          </div>

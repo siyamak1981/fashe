@@ -24,13 +24,13 @@
                         <div class="input-group-prepend ">
                             <span class="input-group-text "><i class="fa fa-group"></i></span>
                         </div>
-                        <select class="form-control" name="frm[news_cat]">
+                        <select class="form-control" name="frm[newcat_id]">
                             <option value="0">دسته بندی </option>
                             <?php
-                            // $cat = newscat();
-                            // foreach ($cat as $val) {
-                            //     echo "<option value='$val[id]'>$val[title]</option>";
-                            // }
+                          
+                            foreach ($newcat_list as $val) {
+                                echo "<option value='$val[id]'>$val[title]</option>";
+                            }
 
                             ?>
                         </select>
