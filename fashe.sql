@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 09, 2019 at 10:37 PM
+-- Generation Time: Mar 28, 2019 at 11:07 AM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.3.0
 
@@ -42,10 +42,33 @@ CREATE TABLE `menu-tbl` (
 --
 
 INSERT INTO `menu-tbl` (`id`, `title`, `url`, `chid`, `status`, `sort`) VALUES
-(3, 'شام خوردی11', '##', 8, '0', 55),
-(4, 'تست', '###', 0, '0', 5),
-(8, 'آموزش python3', '###000', 0, '0', 55),
-(9, 'bhg', 'hbb', 4, '1', 8);
+(3, 'شام خوردی11', '##', 0, '1', 55),
+(4, 'تست', '###', 0, '1', 5),
+(8, 'آموزش python3', '###000', 0, '1', 55),
+(9, 'bhg', 'hbb', 4, '1', 8),
+(10, 'آموزش php', '##', 0, '1', 3),
+(11, 'آموزش django', '###', 10, '1', 2);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `newcat_tbl`
+--
+
+CREATE TABLE `newcat_tbl` (
+  `id` int(11) NOT NULL,
+  `title` varchar(50) COLLATE utf8_persian_ci NOT NULL,
+  `chid` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+
+--
+-- Dumping data for table `newcat_tbl`
+--
+
+INSERT INTO `newcat_tbl` (`id`, `title`, `chid`) VALUES
+(2, 'خبرورزشی', 0),
+(3, 'خبراقتصادی', 0),
+(4, 'مجله خبری ورزشی', 0);
 
 -- --------------------------------------------------------
 
@@ -56,15 +79,19 @@ INSERT INTO `menu-tbl` (`id`, `title`, `url`, `chid`, `status`, `sort`) VALUES
 CREATE TABLE `news_tbl` (
   `id` int(11) NOT NULL,
   `title` varchar(50) COLLATE utf8_persian_ci NOT NULL,
-  `body` text COLLATE utf8_persian_ci NOT NULL
+  `body` text COLLATE utf8_persian_ci NOT NULL,
+  `image` varchar(200) COLLATE utf8_persian_ci NOT NULL,
+  `newcat_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
 
 --
 -- Dumping data for table `news_tbl`
 --
 
-INSERT INTO `news_tbl` (`id`, `title`, `body`) VALUES
-(30, 'آموزش python', '<p>this is a test</p>\r\n');
+INSERT INTO `news_tbl` (`id`, `title`, `body`, `image`, `newcat_id`) VALUES
+(30, 'آموزش python', '<p>this is a test</p>\r\n', '', 0),
+(31, 'خبرورزشی', '<p>wefwef</p>\r\n', '', 0),
+(32, 'python', '<p>;UG</p>\r\n', '', 2);
 
 -- --------------------------------------------------------
 
@@ -111,7 +138,7 @@ CREATE TABLE `pro_tbl` (
 --
 
 INSERT INTO `pro_tbl` (`id`, `title`, `text`, `image1`, `image2`, `image3`, `cat_id`, `count`, `price`) VALUES
-(13, 'تیشرت', '<p>this is a firs tishert</p>\r\n', '../public/uploader/1869053764.jpg', '', '', 2, 22, 220000),
+(13, 'تیشرتdfb', '', '../public/uploader/1869053764.jpg', '', '', 0, 0, 0),
 (14, 'آموزش python', '<p>dthxd</p>\r\n', '../public/uploader/413421358.jpg', '', '', 2, 55, 0),
 (15, 'شام خوردی', '<p>salam salam&nbsp;</p>\r\n', '../public/uploader/346054355.jpg', '', '', 1, 454, 0);
 
@@ -134,8 +161,7 @@ CREATE TABLE `user_tbl` (
 --
 
 INSERT INTO `user_tbl` (`id`, `username`, `password`, `lastname`, `city`) VALUES
-(10, 'siyamak', 'e698741dad4bba322a7cb11c5b642580cc91b07e', '', 0),
-(13, 'siyamak1981', 'siyamak1981', 'siyamak1981', 3);
+(17, 'siyamak', 'siyamak1981', 'siyamak', 1);
 
 --
 -- Indexes for dumped tables
@@ -145,6 +171,12 @@ INSERT INTO `user_tbl` (`id`, `username`, `password`, `lastname`, `city`) VALUES
 -- Indexes for table `menu-tbl`
 --
 ALTER TABLE `menu-tbl`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `newcat_tbl`
+--
+ALTER TABLE `newcat_tbl`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -179,13 +211,19 @@ ALTER TABLE `user_tbl`
 -- AUTO_INCREMENT for table `menu-tbl`
 --
 ALTER TABLE `menu-tbl`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+--
+-- AUTO_INCREMENT for table `newcat_tbl`
+--
+ALTER TABLE `newcat_tbl`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `news_tbl`
 --
 ALTER TABLE `news_tbl`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- AUTO_INCREMENT for table `procat_tbl`
@@ -203,7 +241,7 @@ ALTER TABLE `pro_tbl`
 -- AUTO_INCREMENT for table `user_tbl`
 --
 ALTER TABLE `user_tbl`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
